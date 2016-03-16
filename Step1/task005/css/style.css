@@ -1,0 +1,227 @@
+/*reset -start*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "microsoft yahei";
+    background: #dedede;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+a {
+    border: none;
+}
+/*清除Chrome input 中的focus样式*/
+input, button, select{
+    outline: none;
+    font-size: 10px;
+}
+a img {
+    border: none;
+}
+
+/*reset -end*/
+
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*header -start*/
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #333;
+}
+.logo {
+    float: left;
+    margin-left: 20px;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #000;
+}
+.nav li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+.nav .nav-last {
+    color: #ddd;
+    cursor:not-allowed;
+
+}
+/*header -end*/
+
+/*common -start*/
+.main {
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #848484;
+    border-right: 2px solid #848484;
+    background: #fff;
+}
+/*common -end*/
+
+/*main -start*/
+.main-wrapper {
+    margin: 20px;
+    margin-right: 405px;
+}
+.main h3 {
+    margin-top: 10px;
+    color: rgb(137, 136, 145);
+}
+.main .author {
+    margin: 10px 0;
+    color: rgb(170, 181, 184);
+    font-size: 10px;
+}
+.main p {
+    font-size: 15px;
+    line-height: 2.0;
+    text-indent: 2em;
+}
+.main .list-item {
+    list-style: none;
+    margin-left: 20px;
+}
+.main .good-pic {
+    width: 122px;
+    height: 160px;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+}
+.main .good-pic dd {
+    margin-top: 10px;
+}
+.main .rank {
+    margin-left: 20px;
+    padding: 10px;
+    color: #000;
+}
+.main .tab {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.tab td, .tab th {
+    height: 30px;
+    line-height: 30px;
+}
+.tab th {
+    color: #fff;
+    background: #333;
+}
+.tab .tfoot {
+    font-weight: bold;
+    background: #ccc;
+    border: 1px solid #ccc;
+}
+
+/*main -end*/
+
+/*aside -start*/
+aside {
+    float: right;
+    width: 365px;
+    margin: 20px;
+    margin-left: 0;
+    box-sizing: border-box;
+    font-size: 10px;
+}
+.main .aside-head {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-weight: bold;
+    border-left: 3px solid #dedede;
+    font-size: 15px;
+}
+.main .form {
+    font-size: 10px;
+}
+.form input {
+    vertical-align: middle;
+    margin-bottom: 2px;
+    *margin-bottom: -2px; /*兼容IE6，IE7*/
+}
+.form-item {
+    height: 20px;
+    line-height: 20px;
+    margin-bottom: 5px;
+}
+.form .label-wrapper {
+    float: left;
+    width: 90px;
+    padding-right: 10px;
+    text-align: right;
+}
+.form .password {
+    margin-bottom: 0;
+}
+.form .me {
+    vertical-align: top;
+    line-height: normal;
+}
+.form .tip {
+    margin-left: 100px;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+.form .myself {
+    display: block;
+    width: 220px;
+    height: 50px;
+    resize: none;
+}
+.form .btn {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #3356cf;
+    cursor: pointer;
+}
+/*aside -end*/
+
+/*footer -start*/
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+    clear: both;
+}
+/*foot -end*/
