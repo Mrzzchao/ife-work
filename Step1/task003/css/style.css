@@ -1,0 +1,72 @@
+/*reset -start*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "microsoft yahei";
+    font-size: 14px;
+    background: #dedede;
+}
+img {
+    border: 1px solid #999;
+}
+/*reset -end*/
+
+/*清除浮动*/
+.clearfix:after {
+    content: "\200B";
+    display: block;
+    height: 0;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/*主内容 */
+.container {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #999;
+    background: #eee;
+}
+.team-name {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    background: #fff;
+    vertical-align: bottom;
+}
+.team-name img{
+    margin-right: 20px;
+}
+.team-name span {
+    vertical-align: top;
+}
+.person-wrapper {
+    float: right;
+    width: 120px;
+    margin-left: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    background: #fff;
+}
+.person-logo {
+    margin-bottom: 20px;
+}
+.team-intr {
+    width: auto;
+    padding: 20px;
+    line-height: 1.7;
+    border: 1px solid #999;
+    background: #fff;
+    overflow: hidden;
+}
+.team-intr p {
+    text-indent: 2em;
+}

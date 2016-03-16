@@ -1,0 +1,187 @@
+/*reset -start*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "microsoft yahei";
+    background: #dedede;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+a {
+    border: none;
+}
+/*清除Chrome input 中的focus样式*/
+input, button, select{
+    outline: none;
+    font-size: 10px;
+}
+a img {
+    border: none;
+}
+
+/*reset -end*/
+
+/*header -start*/
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #333;
+}
+.logo {
+    float: left;
+    margin-left: 20px;
+}
+.nav {
+    float: right;
+}
+.nav li {
+    float: left;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: #000;
+}
+.nav li a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+}
+.nav .nav-last {
+    color: #ddd;
+    cursor:not-allowed;
+
+}
+/*header -end*/
+
+/*main -start*/
+.main {
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #848484;
+    background: #fff;
+}
+.main h3 {
+    margin-top: 10px;
+    color: rgb(137, 136, 145);
+}
+.main .author {
+    margin: 10px 0;
+    color: rgb(170, 181, 184);
+    font-size: 10px;
+}
+.main p {
+    font-size: 15px;
+    line-height: 2.0;
+    text-indent: 2em;
+}
+.main .list-item {
+    list-style: none;
+    margin-left: 20px;
+}
+.main .good-pic {
+    width: 122px;
+    height: 160px;
+    padding: 10px;
+    margin: 20px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    font-size: 10px;
+    color: #000;
+    text-align: center;
+}
+.main .good-pic dd {
+    margin-top: 10px;
+}
+.main .rank {
+    margin-left: 20px;
+    padding: 10px;
+    color: #000;
+}
+.main .tab {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.tab td, .tab th {
+    height: 30px;
+    line-height: 30px;
+}
+.tab th {
+    color: #fff;
+    background: #333;
+}
+.tab .tfoot {
+    font-weight: bold;
+    background: #ccc;
+}
+.main .aside {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 3px solid #dedede;
+}
+.main .form {
+    font-size: 14px;
+}
+.form input {
+    vertical-align: text-bottom;
+    margin-bottom: 2px;
+    *margin-bottom: -2px; /*兼容IE6，IE7*/
+
+}
+.form-item, .tip {
+    margin-left: 200px;
+}
+.form-item {
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+}
+.form .label-wrapper {
+    display: inline-block;
+    width: 200px;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: top;
+}
+.form .me {
+    margin-top: -6px;
+}
+.form .tip {
+    margin-left: 413px;
+    margin-bottom: 10px;
+    color: #ccc;
+}
+.form .myself {
+    width: 850px;
+    height: 50px;
+}
+.form .btn {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+    margin-top: 40px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    background: #3356cf;
+}
+/*main -end*/
+
+/*footer -start*/
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}
