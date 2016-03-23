@@ -242,6 +242,7 @@ header .title button:hover {
     background: #e3e2e4;
     font-size: 12px;
     text-align: left;
+    line-height: 26px;
 }
 .yes_icon {
     visibility: hidden;
