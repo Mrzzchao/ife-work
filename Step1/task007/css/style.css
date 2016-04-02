@@ -332,7 +332,8 @@ header .title button:hover {
     right: 0;
     width: 0;
     height: 0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     border-right: 30px solid #fff;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
@@ -456,7 +457,8 @@ header .title button:hover {
     left: 0;
     width: 0;
     height: 0;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     border-left: 30px solid #fff;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;

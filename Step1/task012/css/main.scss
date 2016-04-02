@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/**
+ * 表格样式
+ */
+html, body, table, thead, tbody, tr, td, div {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+table {
+    margin: 0 auto;
+    border: 1px solid #fff;
+    text-align: left;
+}
+thead {
+    color: #fff;
+    background: #000;
+}
+.tbody tr {
+    color: #000;
+    background: #ccc;
+}
+.tbody tr:nth-child(even) {
+    background: #fff;
+}
+@for $i from 1 to 4 {
+    .tbody tr:nth-child(#{$i}) {
+        color: red;
+    }
+}
+/**
+ * 输入框动画
+ */
+#MyInput {
+    display: block;
+    width: 100px;
+    margin: 20px auto;
+    transition: 1s width;
+    &:focus {
+        width: 200px;
+    }
+}
+
+/**
+ * 轮播图
+ */
+$bnWidth: 400px;
+$bnheight:200px;
+.banner {
+    position: relative;
+    width: $bnWidth;
+    height: $bnheight;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.banner-controller {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.banner-controller a {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-left: 2px;
+    color: blue;
+    background-color: #fff;
+    text-align: center;
+    line-height: 28px;
+    text-decoration: none;
+    opacity: .5;
+}
+.banner-container {
+    position: relative;
+    width: $bnWidth*3;
+    height: $bnheight;
+    transition: left 1s;
+}
+.banner-div {
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    float: left;
+    width: $bnWidth;
+    height: $bnheight;
+}
+@mixin setColor($color) {
+    .banner-#{$color} {
+        background-color: $color;
+    }
+}
+@each $color in red, yellow, blue {
+    @include setColor($color);
+}
+// @for $i from 0 to 3 {
+//     #banner-#{$i+1} {
+//         left: $i*$bnWidth;
+//     }
+// }
+@for $i from 0 to 3 {
+    #event-#{$i+1}:target ~.banner-container {
+        left: -$i*$bnWidth;
+    }
+}
