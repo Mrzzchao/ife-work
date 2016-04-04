@@ -3,42 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>IFE JavaScript Task 01</title>
-    <style media="screen">
-        body {
-            background: rgba(16, 120, 100, 0.22);
-            font-family: "Micosoft Yahei";
-        }
-        fieldset {
-            width: 800px;
-            margin: 0 auto 10px;
-            border: 2px solid rgb(129, 0, 8);
-            border-radius: 5px;
-            box-shadow: 5px 5px 10px;
-            background: #fff;
-            font-size: 20px;
-            text-align: center;
-        }
-        select {
-            font-size: 20px;
-        }
-        fieldset legend {
-            color: blue;
-            font-size: 30px;
-        }
-        .tip {
-            text-align: center;
-            font-size: 40px;
-        }
-        .aqi-chart-wrap {
-            width: 1200px;
-            height: 500px;
-            margin: 0 auto;
-            background: #fff;
-            border: 2px solid rgb(129, 0, 8);
-            border-radius: 5px;
-            box-shadow: 5px 5px 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/style.css">
   </head>
 <body>
   <fieldset id="form-gra-time">
@@ -51,18 +16,18 @@
     <legend>请选择查看的城市：</legend>
     <select id="city-select">
       <option>北京</option>
-      <option value="shanghai">上海</option>
+      <!-- <option value="shanghai">上海</option>
       <option value="guangzhou">广州</option>
       <option value="shenzheng">深圳</option>
       <option value="chengdu">成都</option>
       <option value="xian">西安</option>
       <option value="fuzhou">福州</option>
       <option value="xiamen">厦门</option>
-      <option value="shenyang">沈阳</option>
+      <option value="shenyang">沈阳</option> -->
     </select>
   </fieldset>
   <div class="tip">
-      当前城市：<span id="tip-city"></span> 查询时间粒度：<span id="tip-time"></span>
+      当前城市：<span id="tip-city">北京</span> 查询时间粒度：<span id="tip-time">日</span>
   </div>
 
   <div class="aqi-chart-wrap">
