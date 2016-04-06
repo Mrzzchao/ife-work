@@ -44,10 +44,6 @@
         width: 19px;
         box-shadow: 1px 1px 1px #999;
     }
-    .move-left {
-        -webkit-animation: move_left 5s;
-                animation: move_left 5s;
-    }
     #show-pane {
         position: relative;
         display: -webkit-box;
@@ -99,22 +95,6 @@
         visibility: hidden;
         z-index: 999;
     }
-    @-webkit-keyframes move_left {
-        0% {
-            left: 100%;
-        }
-        100 {
-            left: 0;
-        }
-    }
-    @keyframes move_left {
-        0% {
-            left: 100%;
-        }
-        100 {
-            left: 0;
-        }
-    }
 </style>
 </head>
 <body>
@@ -126,6 +106,7 @@
             <button id="right-in">右侧入</button>
             <button id="left-out">左侧出</button>
             <button id="right-out">右侧出</button>
+            <button id="ranData">随机数据</button>
             <button id="sort">排序</button>
         </div>
     </fieldset>

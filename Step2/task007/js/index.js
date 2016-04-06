@@ -1,11 +1,11 @@
 
 var input = document.querySelector("#numInput"),
     buttons = document.querySelector(".buttons"),
-    // leftIn = document.querySelector("#left-in"),
-    // rightIn = document.querySelector("#right-in"),
-    // leftOut = document.querySelector("#left-out"),
-    // rightOut = document.querySelector("#right-out"),
     showPane = document.querySelector("#show-pane"),
+    ranData = document.querySelector("#ranData"),
+    timeDelay = 10,  // 动画延迟时间
+    ranCount = 50,   // 随机生成数量
+    maxValue = 79,   // 随机生成数最大值
     numQueue = [];
 
 var showColor = ["rgb(66, 171, 167)","rgb(156, 235, 76)","rgb(228, 96, 153)","rgb(237, 92, 108)"];
@@ -34,12 +34,13 @@ function getTarget(event) {
 function checkInput(value) {
     if(numQueue.length >= 60) {
         alert("输入超过60个");
+        return 0;
     }
     if(value == '') {
         alert("请输入插入数字");
         return 0;
     }
-    if(!(/^\d+$/.test(value))) {
+    if(!(/^[1-9]+[0-9]*$/.test(value))) {
         alert("请输入合法数字");
         return 0;
     }
@@ -60,7 +61,7 @@ function getShowColor(num) {
         return showColor[1];
     } else if(num < 79) {
         return showColor[2];
-    } else if(num < 100) {
+    } else if(num <= 100) {
         return showColor[3];
     }
 }
@@ -82,24 +83,14 @@ function hideTip(e){
  */
 function renderPane() {
     var showInner = '';
-    if(arguments[0] == 2){
-        for (var num in numQueue) {
-            if (numQueue.hasOwnProperty(num)) {
-                showInner += "<div class='queue-item' style='height:" + numQueue[num]*2 + "px;background:" + getShowColor(numQueue[num]) + ";'" +
-                    "onmouseover='hoverTip(this)' onmouseout='hideTip(this)'>" +
-                    "<div class='itemTip'>" + numQueue[num] + "</div></div>";
-            }
+    for (var num in numQueue) {
+        if (numQueue.hasOwnProperty(num)) {
+            showInner += "<div class='queue-item' style='height:" + numQueue[num]*2 + "px;background:" + getShowColor(numQueue[num]) + ";'" +
+                "onmouseover='hoverTip(this)' onmouseout='hideTip(this)'>" +
+                "<div class='itemTip'>" + numQueue[num] + "</div></div>";
         }
     }
-    if(arguments[0] == 1) {
-        for (var num in numQueue) {
-            if (numQueue.hasOwnProperty(num)) {
-                showInner += "<div class='queue-item move-left' style='height:" + numQueue[num]*2 + "px;background:" + getShowColor(numQueue[num]) + ";'" +
-                    "onmouseover='hoverTip(this)' onmouseout='hideTip(this)'>" +
-                    "<div class='itemTip'>" + numQueue[num] + "</div></div>";
-            }
-        }
-    }
+
     showPane.innerHTML = showInner;
 }
 
@@ -107,20 +98,28 @@ function renderPane() {
  * 4个按钮触发事件
  */
 function leftIn(num) {
-    numQueue.unshift(num);
-    renderPane(2);
+    if(checkInput(num)) {
+        numQueue.unshift(num);
+        renderPane();
+    }
 }
 function rightIn(num) {
-    numQueue.push(num);
-    renderPane(2);
+    if(checkInput(num)) {
+        numQueue.push(num);
+        renderPane();
+    }
 }
 function leftOut(num) {
-    numQueue.shift(num);
-    renderPane(2);
+    if(checkInput(num)) {
+        numQueue.shift(num);
+        renderPane();
+    }
 }
 function rightOut(num) {
-    numQueue.pop(num);
-    renderPane(2);
+    if(checkInput(num)) {
+        numQueue.pop(num);
+        renderPane();
+    }
 }
 
 /**
@@ -128,37 +127,78 @@ function rightOut(num) {
  */
 function sort() {
     var numLen = numQueue.length;
-    for(var i = 0; i < numLen - 1; i++) {
-        for(var j = 0; j < numLen - 1 - i; j++){
-            if(numQueue[j] > numQueue[j + 1]) {
-                var temp = numQueue[j];
-                numQueue[j] = numQueue[j + 1];
-                numQueue[j + 1] = temp;
+    var i = 0, j = 0, time = null;
+    time = setInterval(run, timeDelay);
+    //for(var i = 0; i < numLen - 1; i++) {
+    //    for(var j = 0; j < numLen - 1 - i; j++){
+    //        if(numQueue[j] > numQueue[j + 1]) {
+    //            var temp = numQueue[j];
+    //            numQueue[j] = numQueue[j + 1];
+    //            numQueue[j + 1] = temp;
+    //        }
+    //    }
+    //}
+    function run() {
+        if(i < numLen - 1) {
+            if(j < numLen - 1 - i) {
+                if(numQueue[j] > numQueue[j + 1]) {
+                    var temp = numQueue[j];
+                    numQueue[j] = numQueue[j + 1];
+                    numQueue[j + 1] = temp;
+                    renderPane();
+                }
+                j++;
+            }
+            else {
+                i++;
+                j = 0;
             }
         }
+        else {
+            clearInterval(time);
+            return;
+        }
     }
-    renderPane(1);
+    //renderPane(1);
 }
-
+/**
+ * 随机生成数据
+ */
+function initData() {
+    numQueue = [];
+    var ranNum;
+    for(var i = 0; i < ranCount; i++) {
+        if(ranCount < 10 || ranCount > 60 || maxValue < 0 || maxValue > 100) {
+            alert("random error");
+            return;
+        }
+        ranNum = Math.floor(Math.random()*maxValue+1);
+        numQueue.push(ranNum);
+    }
+    renderPane();
+}
 /**
  * 为4个按钮增加点击事件
  */
-function initQueue() {
+function initBtn() {
     addEvent(buttons, "click", function(event) {
         event = getEvent(event);
         var target = getTarget(event),
             num = input.value.trim();
-        if(checkInput(num)) {
-            switch (target.id) {
-                case "left-in": leftIn(num); break;
-                case "right-in": rightIn(num); break;
-                case "left-out": leftOut(num); break;
-                case "right-out": rightOut(num); break;
-                case "sort": sort(); break;
-                default: alert("target.id error");
-            }
+        switch (target.id) {
+            case "left-in": leftIn(num); break;
+            case "right-in": rightIn(num); break;
+            case "left-out": leftOut(num); break;
+            case "right-out": rightOut(num); break;
+            case "ranData": initData();break;
+            case "sort": sort(); break;
+            default: alert("target.id error");
         }
+
     });
 }
-
-initQueue();
+function init() {
+    initBtn();
+    renderPane();
+}
+init();
