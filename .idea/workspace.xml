@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0db08fda-7a41-4b8e-8e17-14afa962f0ce" name="默认的" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ife-work.iml" afterPath="$PROJECT_DIR$/.idea/ife-work.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step2/task005/index.html" afterPath="$PROJECT_DIR$/Step2/task005/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step1/task009/index.html" afterPath="$PROJECT_DIR$/Step1/task009/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step2/task004/js/index.js" afterPath="$PROJECT_DIR$/Step2/task004/js/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step2/task005/js/task.js" afterPath="$PROJECT_DIR$/Step2/task005/js/task.js" />
     </list>
     <ignored path="ife-work.iws" />
@@ -34,25 +29,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Step2/task005/js/task.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Step2/task007/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.61463416">
-              <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="96" column="62" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
               <folding>
-                <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-                <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-                <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+                <marker date="1459925852781" expanded="true" signature="2045:2125" placeholder="..." />
+                <marker date="1459925852781" expanded="true" signature="2502:2582" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Step2/task005/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Step2/task007/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.410714">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.70234984">
+              <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -93,6 +87,9 @@
         <option value="$PROJECT_DIR$/Step2/task005/index.html" />
         <option value="chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/lookup.js" />
         <option value="$PROJECT_DIR$/Step2/task005/js/task.js" />
+        <option value="$PROJECT_DIR$/Step2/task006/js/index.js" />
+        <option value="$PROJECT_DIR$/Step2/task007/js/index.js" />
+        <option value="$PROJECT_DIR$/Step2/task007/index.html" />
       </list>
     </option>
   </component>
@@ -138,7 +135,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -171,7 +168,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="task005" />
+              <option name="myItemId" value="task007" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ife-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ife-work" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Step2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="task007" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -209,7 +228,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -221,20 +240,20 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Mr_chao/.WebStorm11/config/consoles/ide/ide-scripting.js" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html (3)">
-    <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task004/index.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.index.html (2)">
     <configuration default="false" name="task.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="F:/Software/nodejs/node" path-to-js-file="task.js" working-dir="$PROJECT_DIR$/Step2/task005/js">
       <method />
     </configuration>
     <configuration default="false" name="index.html (3)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task005/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="test.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="F:/Software/nodejs/node" path-to-js-file="test.js" working-dir="$USER_HOME$/Desktop">
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task001/index.html">
       <method />
     </configuration>
-    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task001/index.html">
+    <configuration default="false" name="index.html (1)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task006/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html (2)" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/ife-work/Step2/task007/index.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -286,19 +305,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.task.js" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="Node.js.task.js" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.task.js" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="3" class="java.lang.String" itemvalue="Node.js.test.js" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html (2)" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html (1)" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.index.html (3)" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.task.js" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
       </list>
     </recent_temporary>
   </component>
@@ -319,10 +338,10 @@
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1395864" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13884786" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30757096" sideWeight="0.4911374" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30599368" sideWeight="0.4911374" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5088626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -417,11 +436,41 @@
           <line>115</line>
           <option name="timeStamp" value="118" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task006/js/index.js</url>
+          <line>84</line>
+          <option name="timeStamp" value="122" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task006/js/index.js</url>
+          <line>50</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task006/js/index.js</url>
+          <line>52</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
+          <line>131</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
+          <line>132</line>
+          <option name="timeStamp" value="131" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
+          <line>134</line>
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="119" />
+      <option name="time" value="136" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -431,9 +480,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="95" column="4" selection-start-line="95" selection-start-column="4" selection-end-line="95" selection-end-column="4" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -458,7 +507,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -475,9 +523,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -517,9 +565,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -537,9 +585,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -549,9 +597,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -561,9 +609,9 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -662,13 +710,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Step2/task005/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.410714">
+        <state vertical-scroll-proportion="0.6048527">
           <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding />
         </state>
@@ -676,13 +723,48 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Step2/task005/js/task.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61463416">
-          <caret line="88" column="39" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.72262776">
+          <caret line="340" column="7" selection-start-line="340" selection-start-column="7" selection-end-line="340" selection-end-column="7" />
           <folding>
-            <marker date="1459763853542" expanded="true" signature="3849:3914" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="4727:4792" placeholder="..." />
-            <marker date="1459763853542" expanded="true" signature="5609:5674" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="3850:3915" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="4728:4793" placeholder="..." />
+            <marker date="1459914957358" expanded="true" signature="5610:5675" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2/task006/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.756691">
+          <caret line="83" column="29" selection-start-line="83" selection-start-column="29" selection-end-line="83" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2/task006/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0417755">
+          <caret line="18" column="14" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2/task007/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="96" column="62" selection-start-line="96" selection-start-column="62" selection-end-line="96" selection-end-column="62" />
+          <folding>
+            <marker date="1459925852781" expanded="true" signature="2045:2125" placeholder="..." />
+            <marker date="1459925852781" expanded="true" signature="2502:2582" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Step2/task007/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.70234984">
+          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>

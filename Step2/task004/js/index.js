@@ -74,7 +74,7 @@ function getEvent(event) {
     return event ? event : window.event;
 }
 function getTarget(event) {
-    return event.target || window.srcElement;
+    return event.target || event.srcElement;
 }
 /**
  * 清除表格

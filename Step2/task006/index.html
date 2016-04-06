@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>task18</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<style media="screen">
+    .wrapper {
+        width: 450px;
+    }
+    .buttons {
+        float: right;
+    }
+    .queue-item {
+        float: left;
+        margin: 5px;
+        padding: 5px 10px;
+        box-sizing: border-box;
+        background: red;
+    }
+    #show-pane {
+        width: 450px;
+        margin-top: 10px;
+    }
+    #show-pane {
+        *zoom:1;
+    }
+    #show-pane::before,
+    #show-pane::after {
+        content: "";
+        display: table;
+        line-height: 0;
+    }
+    #show-pane::after {
+        clear: both;
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <input type="text" id="numInput">
+        <div class="buttons">
+            <button id="left-in">左侧入</button>
+            <button id="right-in">右侧入</button>
+            <button id="left-out">左侧出</button>
+            <button id="right-out">右侧出</button>
+        </div>
+    </div>
+
+    <div id="show-pane"></div>
+</body>
+<script src="js/index.js"></script>
+</html>

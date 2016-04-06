@@ -8,12 +8,12 @@
      }
      };
      */
-    /**
-     * IE事件兼容
-     */
 
     var showColor = ["rgb(237, 92, 108)","rgb(156, 235, 76)","rgb(228, 96, 153)","rgb(66, 171, 167)",
                       "rgb(96, 69, 117)","rgb(69, 182, 32)","rgb(80, 44, 245)","rgb(138, 194, 242)"];
+    /**
+    * IE事件兼容
+    */
     function addEvent(element, type, handler) {
         if (element.addEventListener) {
             element.addEventListener(type, handler, false);
@@ -27,11 +27,11 @@
         return event ? event : window.event;
     }
     function getTarget(event) {
-        return event.target || window.srcElement;
+        return event.target || event.srcElement;
     }
 
     var begDate = "2016-01-01";
-// 以下两个函数用于随机模拟生成测试数据
+    // 以下两个函数用于随机模拟生成测试数据
     function getDateStr(dat) {
         var y = dat.getFullYear();
         var m = dat.getMonth() + 1;
