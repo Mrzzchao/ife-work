@@ -110,16 +110,12 @@ function rightIn(num) {
     }
 }
 function leftOut(num) {
-    if(checkInput(num)) {
-        numQueue.shift(num);
-        renderPane();
-    }
+    numQueue.shift(num);
+    renderPane();
 }
 function rightOut(num) {
-    if(checkInput(num)) {
-        numQueue.pop(num);
-        renderPane();
-    }
+    numQueue.pop(num);
+    renderPane();
 }
 
 /**
