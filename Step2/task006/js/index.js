@@ -56,41 +56,55 @@ function renderPane() {
 /**
  * 4个按钮触发事件
  */
-function leftIn(num) {
-    numQueue.unshift(num);
-    renderPane();
-}
-function rightIn(num) {
-    numQueue.push(num);
-    renderPane();
-}
-function leftOut(num) {
-    numQueue.shift(num);
-    renderPane();
-}
-function rightOut(num) {
-    numQueue.pop(num);
-    renderPane();
-}
+ function leftIn(num) {
+     if(checkInput(num)) {
+         numQueue.unshift(num);
+         renderPane();
+     }
+ }
+ function rightIn(num) {
+     if(checkInput(num)) {
+         numQueue.push(num);
+         renderPane();
+     }
+ }
+ function leftOut() {
+     var num = numQueue.shift();
+     if(num) {
+         alert(num);
+         renderPane();
+     }
+     else
+         alert("请先插入，再尝试移出");
+ }
+ function rightOut() {
+     var num = numQueue.pop();
+     if(num) {
+         alert(num);
+         renderPane();
+     }
+     else
+         alert("请先插入，再尝试移出");
+ }
 
 /**
  * 为4个按钮增加点击事件
  */
-function initQueue() {
-    addEvent(buttons, "click", function(event) {
-        event = getEvent(event);
-        var target = getTarget(event),
-            num = input.value.trim();
-        if(checkInput(num)) {
-            switch (target.id) {
-                case "left-in": leftIn(num); break;
-                case "right-in": rightIn(num); break;
-                case "left-out": leftOut(num); break;
-                case "right-out": rightOut(num); break;
-                default: alert("target.id error");
-            }
-        }
-    });
+ function initBtn() {
+     addEvent(buttons, "click", function(event) {
+         event = getEvent(event);
+         var target = getTarget(event),
+             num = input.value.trim();
+         switch (target.id) {
+             case "left-in": leftIn(num); break;
+             case "right-in": rightIn(num); break;
+             case "left-out": leftOut(); break;
+             case "right-out": rightOut(); break;
+             default: alert("target.id error");
+         }
+     });
+ }
+function init() {
+    initBtn();
 }
-
-initQueue();
+init();

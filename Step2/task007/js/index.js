@@ -109,13 +109,23 @@ function rightIn(num) {
         renderPane();
     }
 }
-function leftOut(num) {
-    numQueue.shift(num);
-    renderPane();
+function leftOut() {
+    var num = numQueue.shift();
+    if(num) {
+        alert(num);
+        renderPane();
+    }
+    else
+        alert("请先插入，再尝试移出");
 }
-function rightOut(num) {
-    numQueue.pop(num);
-    renderPane();
+function rightOut() {
+    var num = numQueue.pop();
+    if(num) {
+        alert(num);
+        renderPane();
+    }
+    else
+        alert("请先插入，再尝试移出");
 }
 
 /**
@@ -184,8 +194,8 @@ function initBtn() {
         switch (target.id) {
             case "left-in": leftIn(num); break;
             case "right-in": rightIn(num); break;
-            case "left-out": leftOut(num); break;
-            case "right-out": rightOut(num); break;
+            case "left-out": leftOut(); break;
+            case "right-out": rightOut(); break;
             case "ranData": initData();break;
             case "sort": sort(); break;
             default: alert("target.id error");

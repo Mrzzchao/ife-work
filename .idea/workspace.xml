@@ -4,11 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/Step2/task002/index.html" line="40" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0db08fda-7a41-4b8e-8e17-14afa962f0ce" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step2/task007/index.html" afterPath="$PROJECT_DIR$/Step2/task007/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Step2/task007/js/index.js" afterPath="$PROJECT_DIR$/Step2/task007/js/index.js" />
-    </list>
+    <list default="true" id="0db08fda-7a41-4b8e-8e17-14afa962f0ce" name="默认的" comment="" />
     <ignored path="ife-work.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,9 +28,9 @@
         <entry file="file://$PROJECT_DIR$/Step2/task007/js/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="2.4136252">
-              <caret line="157" column="32" selection-start-line="157" selection-start-column="32" selection-end-line="157" selection-end-column="32" />
+              <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
               <folding>
-                <marker date="1459930582442" expanded="true" signature="1963:2043" placeholder="..." />
+                <marker date="1459931072298" expanded="true" signature="1964:2044" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -43,17 +39,9 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Step2/task007/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.214285">
-              <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-              <folding>
-                <marker date="1459930548889" expanded="true" signature="241:333" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="347:588" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="609:675" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="689:718" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="739:877" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="904:950" placeholder="{...}" />
-                <marker date="1459930548889" expanded="true" signature="967:1078" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="-0.6785714">
+              <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -94,8 +82,8 @@
         <option value="chrome-extension://eopjamdnofihpioajgfdikhhbobonhbb/lookup.js" />
         <option value="$PROJECT_DIR$/Step2/task005/js/task.js" />
         <option value="$PROJECT_DIR$/Step2/task006/js/index.js" />
-        <option value="$PROJECT_DIR$/Step2/task007/js/index.js" />
         <option value="$PROJECT_DIR$/Step2/task007/index.html" />
+        <option value="$PROJECT_DIR$/Step2/task007/js/index.js" />
       </list>
     </option>
   </component>
@@ -342,12 +330,12 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13884786" sideWeight="0.4917647" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30599368" sideWeight="0.4911374" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30599368" sideWeight="0.4911374" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5088626" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -459,27 +447,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
-          <line>119</line>
+          <line>115</line>
           <option name="timeStamp" value="130" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
-          <line>120</line>
+          <line>116</line>
           <option name="timeStamp" value="131" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
-          <line>122</line>
+          <line>118</line>
           <option name="timeStamp" value="135" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
-          <line>141</line>
+          <line>137</line>
           <option name="timeStamp" value="136" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/Step2/task007/js/index.js</url>
-          <line>147</line>
+          <line>143</line>
           <option name="timeStamp" value="137" />
         </line-breakpoint>
       </breakpoints>
@@ -767,26 +755,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Step2/task007/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-31.214285">
-          <caret line="46" column="16" selection-start-line="46" selection-start-column="16" selection-end-line="46" selection-end-column="16" />
-          <folding>
-            <marker date="1459930548889" expanded="true" signature="241:333" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="347:588" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="609:675" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="689:718" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="739:877" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="904:950" placeholder="{...}" />
-            <marker date="1459930548889" expanded="true" signature="967:1078" placeholder="{...}" />
-          </folding>
+        <state vertical-scroll-proportion="-0.6785714">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Step2/task007/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="2.4136252">
-          <caret line="157" column="32" selection-start-line="157" selection-start-column="32" selection-end-line="157" selection-end-column="32" />
+          <caret line="153" column="32" selection-start-line="153" selection-start-column="32" selection-end-line="153" selection-end-column="32" />
           <folding>
-            <marker date="1459930582442" expanded="true" signature="1963:2043" placeholder="..." />
+            <marker date="1459931072298" expanded="true" signature="1964:2044" placeholder="..." />
           </folding>
         </state>
       </provider>
