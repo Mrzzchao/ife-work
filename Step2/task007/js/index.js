@@ -5,7 +5,7 @@ var input = document.querySelector("#numInput"),
     ranData = document.querySelector("#ranData"),
     timeDelay = 10,  // 动画延迟时间
     ranCount = 50,   // 随机生成数量
-    maxValue = 79,   // 随机生成数最大值
+    maxValue = 100,   // 随机生成数最大值
     numQueue = [];
 
 var showColor = ["rgb(66, 171, 167)","rgb(156, 235, 76)","rgb(228, 96, 153)","rgb(237, 92, 108)"];
