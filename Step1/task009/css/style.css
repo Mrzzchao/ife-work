@@ -1,0 +1,310 @@
+@charset "UTF-8";
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, figure,
+dl, dt, ul, ol, li,
+pre,
+fieldset, legend, button, input, textarea,
+th, td {
+  /* table elements 表格元素 */
+  margin: 0;
+  padding: 0;
+}
+
+/* 设置默认字体 */
+body,
+button, input, select, textarea {
+  /* for ie */
+  /*font: 12px/1 Tahoma, Helvetica, Arial, "宋体", sans-serif;*/
+  font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif
+  /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+h1 {
+  font-size: 18px
+  /* 18px / 12px = 1.5 */
+}
+
+h2 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+/* 将斜体扶正 */
+code, kbd, pre, samp, tt {
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 统一等宽字体 */
+small {
+  font-size: 12px;
+}
+
+/* 小于 12px 的中文很难阅读，让 small 正常化 */
+/* 重置列表元素 */
+ul, ol {
+  list-style: none;
+}
+
+/* 重置文本格式元素 */
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+abbr[title], acronym[title] {
+  /* 注：1.ie6 不支持 abbr; 2.这里用了属性选择符，ie6 下无效果 */
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+q:before, q:after {
+  content: '';
+}
+
+/* 重置表单元素 */
+legend {
+  color: #000;
+}
+
+/* for ie6 */
+fieldset, img {
+  border: none;
+}
+
+/* img 搭车：让链接里的 img 无边框 */
+/* 注：optgroup 无法扶正 */
+button, input, select, textarea {
+  border: none;
+  outline: none;
+  font-size: 100%
+  /* 使得表单元素在 ie 下能继承字体大小 */
+}
+
+/* 重置表格元素 */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+i, cite, em, var, address, dfn {
+  font-variant: normal;
+}
+
+/* 重置 hr */
+hr {
+  border: none;
+  height: 1px;
+}
+
+/* 让非ie浏览器默认也显示垂直滚动条，防止因滚动条引起的闪烁 */
+html {
+  overflow-y: scroll;
+}
+
+/*清除浮动 -start*/
+.clearfix {
+  *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  line-height: 0;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*清除浮动 -end*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 800px;
+  height: 56px;
+  background: #2189bf;
+}
+
+.head-logo {
+  margin: 11px auto auto 51px;
+}
+
+.head-right {
+  position: absolute;
+  top: 15px;
+  right: 100px;
+  color: #fff;
+}
+.head-right input {
+  width: 313px;
+  height: 28px;
+  margin-right: 20px;
+  padding-left: 23px;
+  box-sizing: border-box;
+  background: url(../img/search.png) 5px center no-repeat;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.head-right img {
+  vertical-align: text-bottom;
+}
+
+.icon-arrow {
+  background: url(../img/icon9.png) no-repeat;
+}
+
+.icon-folder {
+  background: url(../img/icon7.png) no-repeat;
+}
+
+.icon-file {
+  background: url(../img/icon1.png) no-repeat;
+}
+
+.icon-myself {
+  background: url(../img/icon6.png) no-repeat;
+}
+
+.icon-star {
+  background: url(../img/icon2.png) no-repeat;
+}
+
+.icon-pos {
+  background: url(../img/icon4.png) no-repeat;
+}
+
+.icon-hook {
+  background: url(../img/icon3.png) no-repeat;
+}
+
+.icon-arrow-down {
+  background: url(../img/icon9.png) no-repeat bottom;
+}
+
+.sideBar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+  box-sizing: border-box;
+  background: #2a2e3d;
+}
+.sideBar-user {
+  padding-left: 48px;
+  padding-top: 18px;
+}
+.sideBar-user .img-box {
+  float: left;
+  width: 57px;
+  height: 57px;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid #bababe;
+  border-radius: 100%;
+}
+.sideBar-user .img-box img {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+}
+.sideBar-user .wrapper {
+  position: relative;
+}
+.sideBar-user .author {
+  font-family: SimHei;
+  font-size: 16px;
+  color: #f6f5f5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sideBar-user-msg {
+  margin-top: 27px;
+}
+.sideBar-user-msg .wrapper1, .sideBar-user-msg .wrapper2 {
+  display: inline-block;
+}
+.sideBar-user-msg .wrapper1 {
+  margin-right: 31px;
+  margin-left: 20px;
+}
+.sideBar-user-msg .wrapper2 {
+  margin-left: 31px;
+}
+.sideBar-user-msg .num {
+  font-family: SimHei;
+  font-size: 16px;
+  color: #6e8095;
+}
+.sideBar-user-msg .word {
+  font-family: SimSun;
+  font-size: 12px;
+  color: #6e8095;
+}
+.sideBar-menu {
+  position: absolute;
+  top: 148px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.sideBar-menu .menu-list {
+  padding: 16px 0 16px 48px;
+  color: #6e8095;
+}
+.sideBar-menu .menu-list .menu-title {
+  font-size: 0;
+  font-family: SimHei;
+}
+.sideBar-menu .menu-list .menu-title dt {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sideBar-menu .menu-list .menu-title dd {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sideBar-menu .menu-list .menu-title span {
+  font-size: 12px;
+}
+.sideBar-menu .menu-list .menu-title i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 13px;
+}
+.sideBar-menu .menu-list .active {
+  color: #ededef;
+}
+.sideBar-menu .menu-list:hover {
+  background: #383d4e;
+}
+.sideBar-menu .menu-active {
+  background: #383d4e;
+}
+
+/*# sourceMappingURL=style.css.map */

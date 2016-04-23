@@ -1,0 +1,37 @@
+$headColor:#2189bf;
+$headHeight:56px;
+$inputWidth:313px;
+$inputHeight:28px;
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 800px;
+    height: $headHeight;
+    background: $headColor;
+}
+.head-logo {
+    margin: 11px auto auto 51px;
+}
+.head-right {
+    position: absolute;
+    // margin: 15px auto auto 100;
+    top: 15px;
+    right: 100px;
+    color: #fff;
+    input {
+        width: $inputWidth;
+        height: $inputHeight;
+        margin-right: 20px;
+        padding-left: 23px;
+        box-sizing: border-box;
+        background: url(../img/search.png) 5px center no-repeat;
+        background-color: #fff;
+        border-radius: 10px;
+    }
+    img {
+        vertical-align: text-bottom;
+    }
+}

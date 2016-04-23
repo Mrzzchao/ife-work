@@ -3,20 +3,22 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<title>task18</title>
+<title>task20</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <fieldset class="wrapper">
-        <legend>增删演示</legend>
-        <input type="number" id="numInput" placeholder="请输入数字">
+        <legend>查找演示</legend>
+        <textarea  rows="8" cols="40" id="numInput" placeholder="允许一次批量输入多个内容，格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔"></textarea>
         <div class="buttons">
             <button id="left-in">左侧入</button>
             <button id="right-in">右侧入</button>
             <button id="left-out">左侧出</button>
             <button id="right-out">右侧出</button>
+            <input type="text" id="searchInput" placeholder="请输入查询关键字">
+            <button id="search">查询</button>
         </div>
     </fieldset>
     <div id="show-pane"></div>

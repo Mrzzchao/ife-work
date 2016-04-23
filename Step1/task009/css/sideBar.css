@@ -1,0 +1,142 @@
+.icon-arrow {
+  background: url(../img/icon9.png) no-repeat;
+}
+
+.icon-folder {
+  background: url(../img/icon7.png) no-repeat;
+}
+
+.icon-file {
+  background: url(../img/icon1.png) no-repeat;
+}
+
+.icon-myself {
+  background: url(../img/icon6.png) no-repeat;
+}
+
+.icon-star {
+  background: url(../img/icon2.png) no-repeat;
+}
+
+.icon-pos {
+  background: url(../img/icon4.png) no-repeat;
+}
+
+.icon-hook {
+  background: url(../img/icon3.png) no-repeat;
+}
+
+.icon-arrow-down {
+  background: url(../img/icon9.png) no-repeat bottom;
+}
+
+.sideBar {
+  position: fixed;
+  top: 56px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 260px;
+  box-sizing: border-box;
+  background: #2a2e3d;
+}
+.sideBar-user {
+  padding-left: 48px;
+  padding-top: 18px;
+}
+.sideBar-user .img-box {
+  float: left;
+  width: 57px;
+  height: 57px;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 2px solid #bababe;
+  border-radius: 100%;
+}
+.sideBar-user .img-box img {
+  width: 47px;
+  height: 47px;
+  border-radius: 100%;
+}
+.sideBar-user .wrapper {
+  position: relative;
+}
+.sideBar-user .author {
+  font-family: SimHei;
+  font-size: 16px;
+  color: #f6f5f5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.sideBar-user-msg {
+  margin-top: 27px;
+}
+.sideBar-user-msg .wrapper1, .sideBar-user-msg .wrapper2 {
+  display: inline-block;
+}
+.sideBar-user-msg .wrapper1 {
+  margin-right: 31px;
+  margin-left: 20px;
+}
+.sideBar-user-msg .wrapper2 {
+  margin-left: 31px;
+}
+.sideBar-user-msg .num {
+  font-family: SimHei;
+  font-size: 16px;
+  color: #6e8095;
+}
+.sideBar-user-msg .word {
+  font-family: SimSun;
+  font-size: 12px;
+  color: #6e8095;
+}
+.sideBar-menu {
+  position: absolute;
+  top: 148px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.sideBar-menu .menu-list {
+  padding: 16px 0 16px 48px;
+  color: #6e8095;
+}
+.sideBar-menu .menu-list .menu-title {
+  font-size: 0;
+  font-family: SimHei;
+}
+.sideBar-menu .menu-list .menu-title dt {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sideBar-menu .menu-list .menu-title dd {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.sideBar-menu .menu-list .menu-title span {
+  font-size: 12px;
+}
+.sideBar-menu .menu-list .menu-title i {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 13px;
+}
+.sideBar-menu .menu-list .active {
+  color: #ededef;
+}
+.sideBar-menu .menu-list:hover {
+  background: #383d4e;
+}
+.sideBar-menu .menu-active {
+  background: #383d4e;
+}
+
+/*# sourceMappingURL=sideBar.css.map */

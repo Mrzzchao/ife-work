@@ -1,0 +1,138 @@
+$sideBarWidth: 260px;
+$sideBarColor: #2a2e3d;
+$logoColor: #bababe;
+$wordColor: #6e8095;
+
+@mixin setWord($fontName:"Micosoft Yahei", $fontSize:12px, $fontColor:#fff) {
+    font-family: $fontName;
+    font-size: $fontSize;
+    color: $fontColor;
+}
+@mixin setIcon($url) {
+    background: url(../img/#{$url}.png) no-repeat;
+}
+.icon-arrow {
+    @include setIcon(icon9);
+}
+.icon-folder {
+    @include setIcon(icon7);
+}
+.icon-file {
+    @include setIcon(icon1);
+}
+.icon-myself {
+    @include setIcon(icon6);
+}
+.icon-star {
+    @include setIcon(icon2);
+}
+.icon-pos {
+    @include setIcon(icon4);
+}
+.icon-hook {
+    @include setIcon(icon3);
+}
+.icon-arrow-down {
+        background: url(../img/icon9.png) no-repeat bottom;
+}
+.sideBar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: $sideBarWidth;
+    box-sizing: border-box;
+    background: $sideBarColor;
+    &-user {
+        padding-left: 48px;
+        padding-top: 18px;
+        .img-box {
+            float: left;
+            width: 57px;
+            height: 57px;
+            padding: 3px;
+            box-sizing: border-box;
+            border: 2px solid $logoColor;
+            border-radius: 100%;
+            img {
+                width: 47px;
+                height: 47px;
+                border-radius: 100%;
+            }
+        }
+        .wrapper {
+            position: relative;
+        }
+        .author {
+            @include setWord(SimHei, 16px, #f6f5f5);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        &-msg {
+            margin-top: 27px;
+            .wrapper1, .wrapper2 {
+                display: inline-block;
+            }
+            .wrapper1 {
+                margin-right: 31px;
+                margin-left: 20px;
+            }
+            .wrapper2 {
+                margin-left: 31px;
+            }
+            .num {
+                @include setWord(SimHei, 16px, $wordColor);
+            }
+            .word {
+                @include setWord(SimSun, 12px, $wordColor);
+            }
+        }
+
+    }
+    &-menu {
+        position: absolute;
+        top: 148px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        .menu-list {
+            padding: 16px 0 16px 48px;
+            color: $wordColor;
+            .menu-title {
+                font-size: 0;
+                font-family: SimHei;
+                dt {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+                dd {
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                }
+                span {
+                    font-size: 12px;
+                }
+                i {
+                    display: inline-block;
+                    width: 11px;
+                    height: 11px;
+                    margin-right: 13px;
+                }
+            }
+            .active {
+                color: #ededef;
+            }
+            &:hover {
+                background: #383d4e;
+            }
+        }
+        .menu-active {
+            background: #383d4e;
+        }
+    }
+}

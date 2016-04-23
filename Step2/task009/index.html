@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>task20</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <fieldset class="wrapper">
+        <legend>查找演示</legend>
+        <div class="tags container">
+            <label for="tag">Tag:<input type="text" name="tag" class="tagInput" placeholder="输入空格，逗号，回车时确认添加"></label>
+            <div class="show-pane tags-pane"></div>
+        </div>
+        <textarea  rows="8" cols="40" class="hobbyInput" placeholder="允许一次批量输入多个内容，格式可以为数字、中文、英文等，可以通过用回车，逗号（全角半角均可），顿号，空格（全角半角、Tab等均可）等符号作为不同内容的间隔"></textarea>
+        <div class="container hobbys">
+            <button class="addBtn">确认兴趣爱好</button>
+            <div class="show-pane hobby-pane"></div>
+        </div>
+    </fieldset>
+</body>
+<script src="js/task.js"></script>
+</html>

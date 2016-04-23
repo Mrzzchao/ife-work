@@ -1,12 +1,10 @@
 
-var input = document.querySelector("#numInput"),
+var valueInput = document.querySelector("#numInput"),
     buttons = document.querySelector(".buttons"),
-    // leftIn = document.querySelector("#left-in"),
-    // rightIn = document.querySelector("#right-in"),
-    // leftOut = document.querySelector("#left-out"),
-    // rightOut = document.querySelector("#right-out"),
-     showPane = document.querySelector("#show-pane"),
-    numQueue = [];
+    showPane = document.querySelector("#show-pane"),
+    searchInput = document.querySelector("#searchInput"),
+    searchBtn = document.querySelector("#search"),
+    valueQueue = [];
 
 /**
 * IE事件兼容
@@ -30,13 +28,9 @@ function getTarget(event) {
 /**
  * 检查输入合法
  */
-function checkInput(value) {
-    if(value == '') {
-        alert("请输入插入数字");
-        return 0;
-    }
-    if(!(/^\d+$/.test(value))) {
-        alert("请输入合法数字");
+function checkInput(valueArr) {
+    if(valueArr.length == 0) {
+        alert("请输入有效内容");
         return 0;
     }
     return 1;
@@ -45,9 +39,12 @@ function checkInput(value) {
 /**
  * 渲染队列
  */
-function renderPane() {
+function renderPane(match) {
     var innerHTML = "";
-    numQueue.forEach(function(num) {
+    valueQueue.forEach(function(num) {
+        if(match != null) {
+            num = num.replace(new RegExp(match, "g"), "<span class='select'>" + match + "</span>")
+        }
         innerHTML += "<div class='queue-item'>" + num + "</div>";
     });
     showPane.innerHTML = innerHTML;
@@ -56,20 +53,24 @@ function renderPane() {
 /**
  * 4个按钮触发事件
  */
- function leftIn(num) {
-     if(checkInput(num)) {
-         numQueue.unshift(num);
+ function leftIn(valueArr) {
+     if(checkInput(valueArr)) {
+         valueArr.forEach(function(ele) {
+             valueQueue.unshift(ele);
+         });
          renderPane();
      }
  }
- function rightIn(num) {
-     if(checkInput(num)) {
-         numQueue.push(num);
+ function rightIn(valueArr) {
+     if(checkInput(valueArr)) {
+         valueArr.forEach(function(ele) {
+             valueQueue.push(ele);
+         });
          renderPane();
      }
  }
  function leftOut() {
-     var num = numQueue.shift();
+     var num = valueQueue.shift();
      if(num) {
          alert(num);
          renderPane();
@@ -78,7 +79,7 @@ function renderPane() {
          alert("请先插入，再尝试移出");
  }
  function rightOut() {
-     var num = numQueue.pop();
+     var num = valueQueue.pop();
      if(num) {
          alert(num);
          renderPane();
@@ -88,18 +89,36 @@ function renderPane() {
  }
 
 /**
- * 为4个按钮增加点击事件
+ * 查询按钮事件
+ */
+function search() {
+    var searchText = searchInput.value.trim();
+    renderPane(searchText);
+}
+
+/**
+ * 获得输入的分隔数组
+ */
+function getInput() {
+    return valueInput.value.split(/[^0-9a-zA-Z\u4e00-\u9fa5]+/).filter(function(value) {
+        return value != '';
+    });
+}
+
+/**
+ * 为5个按钮增加点击事件
  */
  function initBtn() {
      addEvent(buttons, "click", function(event) {
          event = getEvent(event);
          var target = getTarget(event),
-             num = input.value.trim();
+             valueArr = getInput();
          switch (target.id) {
-             case "left-in": leftIn(num); break;
-             case "right-in": rightIn(num); break;
+             case "left-in": leftIn(valueArr); break;
+             case "right-in": rightIn(valueArr); break;
              case "left-out": leftOut(); break;
              case "right-out": rightOut(); break;
+             case "search": search(); break;
              default: break;
          }
      });

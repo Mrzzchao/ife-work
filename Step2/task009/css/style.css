@@ -1,0 +1,78 @@
+body {
+    background: rgba(16, 120, 100, 0.22);
+    font-family: "Micosoft Yahei";
+}
+.wrapper {
+    width: 800px;
+    margin: 0 auto 10px;
+    border: 2px solid rgb(129, 0, 8);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    background: #fff;
+    font-size: 20px;
+    text-align: center;
+}
+.wrapper legend {
+    color: rgb(71, 158, 163);
+    font-size: 30px;
+}
+.wrapper button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background: #fff;
+    font-size: 15px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+}
+.wrapper button:hover {
+    background: rgb(71, 158, 163);
+}
+.wrapper label {
+    color: rgb(71, 158, 163);
+    font-size: 25px;
+}
+.container {
+    margin: 20px 0;
+}
+.queue-item {
+    float: left;
+    margin: 5px;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    color: #fff;
+    background: rgb(39, 102, 191);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.show-pane {
+    position: relative;
+    width: 830px;
+    margin: 10px auto;
+    background: #fff;
+    border: 2px solid rgb(129, 0, 8);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px;
+    text-align: center;
+}
+.show-pane {
+    *zoom:1;
+}
+.show-pane::before,
+.show-pane::after {
+    content: "";
+    display: table;
+    line-height: 0;
+}
+.show-pane::after {
+    clear: both;
+}
+.delete-info {
+    display: none;
+}
+.queue-item:hover {
+    background: red;
+}
+.queue-item:hover .delete-info {
+    display: inline;
+}
