@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>task26</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <section class="background">
+        <div class="planet-1 rotating">
+            <div class="hole-4"></div>
+            <div class="hole-5"></div>
+        </div>
+        <div class="planet-2 rotating">
+            <div class="hole-4"></div>
+            <div class="hole-5"></div>
+        </div>
+        <div class="planet-3 rotating">
+            <div class="hole-4"></div>
+            <div class="hole-5"></div>
+        </div>
+        <div class="planet-4 rotating">
+            <div class="hole-4"></div>
+            <div class="hole-5"></div>
+        </div>
+    </section>
+
+    <section class="main">
+        <div class="planet rotating">
+            <div class="hole-1"></div>
+            <div class="hole-2"></div>
+            <div class="hole-3"></div>
+        </div>
+        <div class="orbit-1"></div>
+        <div class="orbit-2"></div>
+        <div class="orbit-3"></div>
+        <div class="orbit-4"></div>
+    </section>
+
+    <section class="controller">
+        <h2>Control 操作面板</h2>
+        <ul class="orbits">
+            <li class="orbit-item1">
+                <span>第一轨道</span>
+                <button class="createBtn">建造飞船</button>
+                <button class="flyBtn">起飞</button>
+                <input type="text" class="speed">
+                <button class="speedBtn">设置速度</button>
+            </li>
+            <li class="orbit-item2">
+                <span>第二轨道</span>
+                <button class="createBtn">建造飞船</button>
+                <button class="flyBtn">起飞</button>
+                <input type="text" class="speed">
+                <button class="speedBtn">设置速度</button>
+            </li>
+            <li class="orbit-item3">
+                <span>第三轨道</span>
+                <button class="createBtn">建造飞船</button>
+                <button class="flyBtn">起飞</button>
+                <input type="text" class="speed">
+                <button class="speedBtn">设置速度</button>
+            </li>
+            <li class="orbit-item4">
+                <span>第四轨道</span>
+                <button class="createBtn">建造飞船</button>
+                <button class="flyBtn">起飞</button>
+                <input type="text" class="speed">
+                <button class="speedBtn">设置速度</button>
+            </li>
+        </ul>
+    </section>
+    <section class="console">
+        <h2>Console 控制台</h2>
+        <div class="infoPane"></div>
+    </section>
+</body>
+<script src="js/EventUtil.js"></script>
+<script src="js/dragEvent.js"></script>
+<script src="js/control"></script>
+</html>
