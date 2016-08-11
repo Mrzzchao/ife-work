@@ -1,0 +1,17 @@
+@import "partitials/variables";
+@import "partitials/main";
+@import "partitials/control";
+@import "partitials/console";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 1280px;
+    background: $bgColor;
+    font-family: "Micosoft YaHei";
+}

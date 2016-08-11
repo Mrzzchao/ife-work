@@ -1,0 +1,102 @@
+$height: 50px;
+$pdValue: 10px;
+$bgColor: #eee;
+$bdColor: #999;
+$bdWidth: 1px;
+$grid-gutter-width: 10px;
+$screen-md-min: 769px;
+$screen-sm-max: 768px;
+$columns-count: 12;
+
+// reset css
+@mixin reset {
+    margin: 0;
+    padding: 0;
+}
+
+// clear float
+@mixin clearfix {
+    &::before {
+        content: '';
+        display: table;
+    }
+    &::after {
+        clear:both;
+    }
+}
+
+// inner style
+@mixin innerStyle{
+    height: $height;
+    background-color: $bgColor;
+    border: $bdWidth solid $bdColor;
+}
+
+// create container
+@mixin make-container($gutter: $grid-gutter-width) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: ($gutter / 2);
+    margin-bottom: ($gutter / 2);
+    padding-left: ($gutter/2);
+    padding-right: ($gutter/2);
+
+}
+
+// create row
+@mixin make-row($gutter: $grid-gutter-width) {
+    margin-left: ceil(($gutter / -2));
+    margin-right: floor(($gutter / -2));
+    margin-top: ($gutter / 2);
+    margin-bottom: ($gutter / 2);
+    @include clearfix;
+}
+
+@mixin make-column($gutter) {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: ($gutter / 2);
+    padding-right: ($gutter / 2 );
+    margin-top: $gutter / 2;
+    box-sizing: border-box;
+}
+// generate grid
+@mixin makeGrid($flag, $columns: $columns-count, $gutter: $grid-gutter-width) {
+    @if $flag {
+        @for $i from 1 through $columns{
+            .col-sm-#{$i} {
+                @include make-column($gutter);
+                @include innerStyle;
+                width: percentage($i / $columns);
+            }
+        }
+    }
+    @else {
+        @for $i from 1 through $columns{
+            .col-md-#{$i} {
+                @include make-column($gutter);
+                @include innerStyle;
+                width: percentage($i / $columns);
+            }
+        }
+    }
+}
+
+html, body {
+    @include reset;
+}
+
+.container {
+    @include make-container;
+}
+.row {
+    @include make-row;
+}
+
+@media (max-width: $screen-sm-max) {
+    @include makeGrid(true);
+}
+@media (min-width: $screen-md-min) {
+    @include makeGrid(false);
+}

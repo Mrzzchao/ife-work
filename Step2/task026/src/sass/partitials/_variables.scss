@@ -1,0 +1,29 @@
+$bgColor: rgb(10, 12, 36);
+$pColor: rgb(61, 170, 209);
+$pWidth: 300px;
+$p1Color: rgb(207, 134, 37);
+$p1Width: 50px;
+$p2Color: rgb(250, 67, 144);
+$p2Width: 68px;
+$p3Color: rgb(138, 210, 35);
+$p3Width: 70px;
+$p4Color: rgb(47, 173, 92);
+$p4Width: 30px;
+
+$color1: rgb(81, 30, 227);
+$color2: rgba(115, 148, 133, 0.3);
+
+$controlWidth: 500px;
+$controlHeight: 300px;
+$btnColor: rgb(27, 176, 209);
+
+$consoleWidth: 500px;
+$consoleHeight: 300px;
+@keyframes rotating {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

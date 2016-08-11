@@ -1,0 +1,21 @@
+@import "variables";
+
+.console {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: $controlWidth;
+    color: #fff;
+
+    h2 {
+        padding: 10px;
+        background: $color1;
+        font-size: 20px;
+    }
+
+    .infoPane {
+        height: 200px;
+        padding: 5px;
+        background: $color2;
+    }
+}

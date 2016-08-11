@@ -1,0 +1,64 @@
+/*reset -start*/
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "microsoft yahei";
+    background: #dedede;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*reset -end*/
+
+
+/*main -start*/
+.main {
+    position: relative;
+    margin: 20px;
+    padding: 20px;
+    border-bottom: 2px solid #848484;
+    background: #fff;
+    height: 500px;
+}
+.main h3 {
+    margin-top: 10px;
+    color: rgb(137, 136, 145);
+}
+.main .author {
+    position: absolute;
+    bottom:20px;
+    right: 20px;
+    margin: 10px 0;
+    color: #000;
+    font-size: 10px;
+    text-align: right;
+}
+
+.main .tab {
+    width: 100%;
+    text-align: left;
+    border: 1px solid #ccc;
+}
+.tab td, .tab th {
+    height: 30px;
+    line-height: 30px;
+}
+.tab th {
+    color: #fff;
+    background: #333;
+}
+/*main -end*/
+
+/*footer -start*/
+footer {
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #fff;
+    background: #000;
+}

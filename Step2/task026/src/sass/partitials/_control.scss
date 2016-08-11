@@ -1,0 +1,51 @@
+@import "variables";
+
+.controller {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $controlWidth;
+    color: #fff;
+    font-size: 0;
+
+    h2 {
+        padding: 10px;
+        background: $color1;
+        font-size: 20px;
+    }
+
+    .orbits {
+        padding: 5px;
+        background: $color2;
+
+        li {
+            list-style: none;
+            margin-top: 10px;
+        }
+
+        @for $i from 1 through 4 {
+            .orbit-item#{$i} {
+                span {
+                    font-size: 20px;
+                    margin-right: 10px;
+                    vertical-align: baseline;
+                }
+                button {
+                    padding: 5px 15px;
+                    margin-right: 10px;
+                    font-size: 15px;
+                    color: #fff;
+                    background: $btnColor;
+                }
+                input {
+                    display: inline-block;
+                    padding: 5px;
+                    width: 100px;
+                    height: 30px;
+                    font-size: 14px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

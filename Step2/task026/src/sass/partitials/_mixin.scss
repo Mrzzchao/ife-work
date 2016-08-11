@@ -1,0 +1,85 @@
+@mixin circleMake {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+@mixin planetMake($index) {
+    @if $index == 0 {
+        background: $pColor;
+        width: $pWidth;
+        height: $pWidth;
+    }
+    @if $index == 1 {
+        background: $p1Color;
+        width: $p1Width;
+        height: $p1Width;
+    }
+    @if $index == 2 {
+        background: $p2Color;
+        width: $p2Width;
+        height: $p2Width;
+    }
+    @if $index == 3 {
+        background: $p3Color;
+        width: $p3Width;
+        height: $p3Width;
+    }
+    @if $index == 4 {
+        background: $p4Color;
+        width: $p4Width;
+        height: $p4Width;
+    }
+}
+
+@mixin holeMake($index) {
+    @if $index == 0 {
+        background: darken($pColor, 20%);
+        width: $pWidth / 4;
+        height: $pWidth / 4;
+    }
+    @if $index == 1 {
+        background: darken($p1Color, 20%);
+        width: $p1Width / 4;
+        height: $p1Width / 4;
+    }
+    @if $index == 2 {
+        background: darken($p2Color, 20%);
+        width: $p2Width / 4;
+        height: $p2Width / 4;
+    }
+    @if $index == 3 {
+        background: darken($p3Color, 20%);
+        width: $p3Width / 4;
+        height: $p3Width / 4;
+    }
+    @if $index == 4 {
+        background: darken($p4Color, 20%);
+        width: $p4Width / 4;
+        height: $p4Width / 4;
+    }
+}
+
+@mixin orbitMake($i) {
+    width: $pWidth + (90px * $i);
+    height: $pWidth + (90px * $i);
+    border: 1px solid rgb(68, 67, 57);
+}
+
+@mixin centerMake {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+@mixin starMake {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid rgb(240, 246, 125);
+}
