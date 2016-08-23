@@ -17,5 +17,5 @@ var btnHandler = function(commader) {
     var id = null;
     var cmd = null;
 
-    
+    var
 }
