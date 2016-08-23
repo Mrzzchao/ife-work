@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 node_modules/
 .gitignore
 .gitattributes
 .git/
+=======
+node_modules
+.git/
+>>>>>>> master
